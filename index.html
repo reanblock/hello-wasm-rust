@@ -6,12 +6,15 @@
     <title>Hello Wasm Rust!</title>
 </head>
 <body>
-    <script type="module">
-        import init, {add} from './pkg/hello_wasm.js';
+<script type="module">
+    // import the init function and any functions you need
+    import init, {add, subtract} from './pkg/hello_wasm.js';
 
-        await init();
+    // wasm requires calling init() first
+    await init();
 
-        console.log(add(1,2));
-    </script>
+    console.log("Resulg of add: ",  add(1,2));
+    console.log("Resulg of subtract: ",  subtract(5,2));
+</script>
 </body>
 </html>
