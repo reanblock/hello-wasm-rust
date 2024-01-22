@@ -64,3 +64,7 @@ Serve the html page in a browser using python simple http server and open the co
 ```
 python3 -m http.server
 ```
+
+## Further reading
+
+Checkout the [MDN Compiling from Rust to WebAssembly](https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_Wasm) docs.
